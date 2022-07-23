@@ -1,0 +1,146 @@
+@media(max-width:720px) {
+    .body {
+        width: 100%;
+    }
+
+    .logo_block {
+        /* display: block; */
+        flex-direction: column;
+
+
+    }
+
+    .logo_block h1 {
+        font-size: 18px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .logo_block img {
+        width: 98px;
+        height: 97px;
+        margin: 1% 4%;
+
+    }
+
+    .img_block {
+        flex-direction: column;
+    }
+
+    .menu {
+        display: none;
+
+    }
+
+    .kartina {
+        display: none;
+    }
+
+    .frends_card img {
+        width: 360px;
+        height: 180px;
+        flex-wrap: wrap;
+        /* flex-direction: ; */
+    }
+
+    .video h2 {
+        font-size: 24px;
+        text-align: center;
+        top: auto;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .img_play1 {
+        width: 370px;
+        height: 196px;
+        margin: 0 22px;
+        border-radius: 24px;
+    }
+
+    .img_play {
+        width: 40px;
+        height: 40px;
+        justify-content: center;
+    }
+
+    .frends_card p {
+        font-size: 100%;
+    }
+
+    .text h3 {
+        font-size: 24px;
+    }
+
+    .text p {
+        font-size: 15px;
+    }
+
+    .slovo h4 {
+        font-size: 24px;
+    }
+
+    .slogo_img {
+        width: 130px;
+        height: 101px;
+        margin: 0 47px;
+        /* padding: 0 50px; */
+        padding: 0;
+        justify-content: space-between;
+    }
+
+    .slogo_img img {
+        padding: 0 20px;
+
+    }
+
+    .slogo_text p {
+        font-size: 15px;
+
+    }
+
+    .footer h5 {
+        font-size: 24px
+    }
+
+    .inisial_img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .footer_info h6 {
+        font-size: 18px;
+        padding: 25px 0;
+    }
+
+    .footer_info p {
+        font-size: 10px;
+    }
+
+    .footer_data {
+        flex-direction: column;
+        padding: 5px 0;
+    }
+
+    .inisial_img {
+        width: 40%;
+    }
+
+    .footer_info {
+        padding-top: 10px 0;
+    }
+
+
+
+
+
+
+
+}
+
+
+@media(min-width: 767px) {
+    .burger_menu {
+        display: none;
+    }
+}

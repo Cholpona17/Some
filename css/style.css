@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.logo_block {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_block img {
+    margin: 0 12% 0 0;
+}
+
+.logo_block h1 {
+    color: #0088A2;
+    font-size: 60px;
+    font-weight: 400;
+    font-family: 'Josefin Sans';
+}
+
+.menu {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.menu_nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__item {
+    font-size: 35px;
+    font-weight: 400;
+    font-family: 'Open Sans';
+    text-decoration: none;
+    color: #FFF;
+}
+
+.menu_nav li {
+    list-style: none;
+    flex: 0 1 20%;
+    background-color: #808080;
+    text-align: center;
+    padding: 15px 0;
+    transition: 0.5s;
+}
+
+.menu_nav li:hover {
+    background-color: #0088A2;
+}
+
+/* ----------------- */
+#toggle {
+    opacity: 0;
+    /* Опасити делает меню невидимым */
+}
+
+.buger_menu {
+    display: block;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.btn span,
+.btn span::before,
+.btn span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(81, 81, 81);
+    transition: 0.5s ease 0s;
+}
+
+.btn span::before {
+    content: "";
+    top: -8px;
+}
+
+.btn span::after {
+    content: "";
+    top: 8px;
+
+}
+
+
+.menu2 {
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 90%;
+    height: 100%;
+    padding: 80px 0;
+    text-align: center;
+    list-style: none;
+    background-color: #FFFFFF;
+    box-shadow: 1px 0 5px rgba(0, 0, 0, 0.3);
+    transition: 0.7s ease 0s;
+}
+
+.menu_item2 {
+    display: block;
+    padding: 15px 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    color: #0088A2;
+    border-bottom: 0.5px solid #0088A2;
+    width: 80%;
+    transition: 1s ease 0s;
+    text-decoration: none;
+
+}
+
+.menu_item:hover {
+    background-color: #0088A2;
+}
+
+#toggle:checked~.btn span {
+    transform: rotate(45deg);
+}
+
+#toggle:checked~.btn span::before {
+    transform: rotate(-90deg);
+    top: 0;
+}
+
+#toggle:checked~.btn span::after {
+    transform: rotate(0deg);
+    top: 0;
+}
+
+#toggle:checked~.menu2 {
+    left: 0;
+    visibility: visible;
+}
+
+/* ------------------ */
+
+.section_fren {
+    margin: 30px;
+}
+
+.img_block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.frends_card {
+    flex: 0 1 30%;
+    position: relative;
+    z-index: -1;
+
+}
+
+.frends_card img {
+    width: 100%;
+}
+
+.frends_card p {
+    color: white;
+    position: absolute;
+    top: 120px;
+    left: 20%;
+    width: 60%;
+    text-align: center;
+}
+
+.img_nout {
+    position: relative;
+    width: 100%;
+}
+
+.img_play1 {
+    width: 100%;
+}
+
+.img_play {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 49%;
+    left: 47%;
+}
+
+.video h2 {
+    font-size: 90px;
+    color: #0088A2;
+    text-align: center;
+    padding: 3%;
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+
+.kartina {
+    width: 80%;
+    height: 667px;
+    margin: 60px auto;
+    position: relative;
+    margin-top: 7%;
+}
+
+.kartina_img {
+    position: absolute;
+    height: 80%;
+}
+
+.kartina_img:nth-child(1) {
+    left: 0;
+}
+
+.kartina_img:nth-child(2) {
+    left: 20%;
+}
+
+.kartina_img:nth-child(3) {
+    left: 38%;
+}
+
+.kartina_img:nth-child(4) {
+    left: 56%;
+}
+
+.kartina_img:nth-child(5) {
+    left: 74%;
+}
+
+.kartina_img:nth-child(even) {
+    top: 8%;
+}
+
+.text {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+
+}
+
+.text h3 {
+    font-size: 90px;
+    color: #0088A2;
+    text-align: center;
+    padding: 34px;
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+
+.text p {
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Roboto';
+    color: #707070;
+
+}
+
+.slovo h4 {
+    font-size: 90px;
+    color: #0088A2;
+    text-align: center;
+    padding: 34px;
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+
+.slogo_img {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.slogo_img img {
+    font-size: 30%;
+}
+
+.slogo_text {
+    width: 80%;
+    margin: 5% auto;
+}
+
+.slogo_text p {
+    font-size: 37px;
+    text-align: center;
+    font-family: 'Roboto';
+    color: #707070;
+}
+
+.footer {
+    background-color: #0088A2;
+}
+
+.footer h5 {
+    font-size: 90px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 5%;
+    font-family: 'Josefin Sans';
+    font-weight: 400;
+}
+
+.inisial_img {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.footer_data {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+.footer_info {
+    flex: 0 1 30%;
+    text-align: center;
+}
+
+.footer_info h6 {
+    font-size: 30px;
+    color: #FFF;
+    font-family: "Open Sans";
+    align-items: center;
+    font-weight: 400;
+    padding: 50px 0;
+}
+
+.footer_info p {
+    font-size: 20px;
+    color: #FFF;
+    font-family: "Open Sans";
+    font-weight: 400;
+
+}
+
+.frends_card {
+    flex: 0 1 50%;
+}
+
+.burger_menu {
+    /* display: none; */
+}
